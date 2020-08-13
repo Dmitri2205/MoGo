@@ -46,9 +46,9 @@ header .header__bottomrow_item span{color:#fff;height:45px;line-height:50px;font
 .intro{display:block;width:100%;text-align:center;padding-top:30px;padding-bottom:50px;text-align:center}
 .intro h3{font-family:"Kushan Script"}
 .intro h2{font-size:30px;font-weight:600;text-transform:uppercase}
-.intro p{width:50%;margin:47px auto 94px auto}
-@media screen and (max-width:1024px){
-.intro p{width:90%;margin:47px auto 47px auto;text-align:left}
+.intro p{width:50%;margin:47px 0;text-align:left}
+@media screen and (max-width:720px){
+.intro p{width:90%;margin:47px auto 94px auto;text-align:center}
 }
 .intro__photorow{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;width:95%;height:auto;margin:0 auto 110px auto}
 @media screen and (max-width:720px){
@@ -73,7 +73,7 @@ header .header__bottomrow_item span{color:#fff;height:45px;line-height:50px;font
 }
 .intro__statsrow_item{display:block;width:239px;color:#fff;border-left:1px solid #a9e7db;border-right:1px solid #a9e7db;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0}
 @media screen and (max-width:720px){
-.intro__statsrow_item{width:50%;margin:0 auto}
+.intro__statsrow_item{width:50%;margin:0 auto;text-align:center}
 }
 .intro__statsrow_item p{text-transform:uppercase;font-size:14px}
 .intro__statsrow_item p span{font-size:72px;font-weight:700}
@@ -113,19 +113,19 @@ header .header__bottomrow_item span{color:#fff;height:45px;line-height:50px;font
 .service{display:block;width:100%;text-align:center;padding-top:60px;text-align:center}
 .service h3{font-family:"Kushan Script"}
 .service h2{font-size:30px;font-weight:600;text-transform:uppercase}
-.service p{width:50%;margin:47px auto 94px auto}
-@media screen and (max-width:1024px){
-.service p{width:90%;margin:47px auto 47px auto;text-align:left}
+.service p{width:50%;margin:47px 0;text-align:left}
+@media screen and (max-width:720px){
+.service p{width:90%;margin:47px auto 94px auto;text-align:center}
 }
 .service img{margin:0 10px;width:50%;height:50%}
 @media screen and (min-width:320px) and (max-width:718px){
 .service img{width:90%;margin:0 auto}
 }
 .service__wraper{display:block}
-@media screen and (min-width:720px) and (max-width:1540px){
+@media screen and (min-width:720px){
 .service__wraper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:90%;margin:0 auto;padding-bottom:125px}
 }
-.service__wraper_block{display:block;width:50%;text-align:left;margin:0 10px;position:relative;top:0;left:0}
+.service__wraper_block{display:block;width:50%;text-align:left;margin:0 auto;position:relative;top:0;left:0}
 @media screen and (min-width:320px) and (max-width:718px){
 .service__wraper_block{width:90%;margin:20px auto}
 }
@@ -203,9 +203,9 @@ header .header__bottomrow_item span{color:#fff;height:45px;line-height:50px;font
 }
 .ourteam h3{font-family:"Kushan Script"}
 .ourteam h2{font-size:30px;font-weight:600;text-transform:uppercase}
-.ourteam p{width:50%;margin:47px auto 94px auto}
-@media screen and (max-width:1024px){
-.ourteam p{width:90%;margin:47px auto 47px auto;text-align:left}
+.ourteam p{width:50%;margin:47px 0;text-align:left}
+@media screen and (max-width:720px){
+.ourteam p{width:90%;margin:47px auto 94px auto;text-align:center}
 }
 .ourteam__row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:95%;margin:auto auto 81px auto}
 @media screen and (max-width:720px){
@@ -238,9 +238,9 @@ header .header__bottomrow_item span{color:#fff;height:45px;line-height:50px;font
 .whatWeDo{text-align:center}
 .whatWeDo h3{font-family:"Kushan Script"}
 .whatWeDo h2{font-size:30px;font-weight:600;text-transform:uppercase}
-.whatWeDo p{width:50%;margin:47px auto 94px auto}
-@media screen and (max-width:1024px){
-.whatWeDo p{width:90%;margin:47px auto 47px auto;text-align:left}
+.whatWeDo p{width:50%;margin:47px 0;text-align:left}
+@media screen and (max-width:720px){
+.whatWeDo p{width:90%;margin:47px auto 94px auto;text-align:center}
 }
 .whatWeDo__grid{display:grid;width:100%;grid-auto-rows:380px;grid-auto-columns:.5fr}
 @media screen and (max-width:1024px){
@@ -293,9 +293,9 @@ header .header__bottomrow_item span{color:#fff;height:45px;line-height:50px;font
 .clients{text-align:center;background:url(img/clientsBackGround.png) center no-repeat;background-size:cover;padding-top:120px}
 .clients h3{font-family:"Kushan Script"}
 .clients h2{font-size:30px;font-weight:600;text-transform:uppercase}
-.clients p{width:50%;margin:47px auto 94px auto}
-@media screen and (max-width:1024px){
-.clients p{width:90%;margin:47px auto 47px auto;text-align:left}
+.clients p{width:50%;margin:47px 0;text-align:left}
+@media screen and (max-width:720px){
+.clients p{width:90%;margin:47px auto 94px auto;text-align:center}
 }
 .clients__wraper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;width:80%;margin:50px auto 112px auto}
 @media screen and (max-width:1024px){
@@ -323,9 +323,9 @@ header .header__bottomrow_item span{color:#fff;height:45px;line-height:50px;font
 .stories{display:block;width:100%;text-align:center}
 .stories h3{font-family:"Kushan Script"}
 .stories h2{font-size:30px;font-weight:600;text-transform:uppercase}
-.stories p{width:50%;margin:47px auto 94px auto}
-@media screen and (max-width:1024px){
-.stories p{width:90%;margin:47px auto 47px auto;text-align:left}
+.stories p{width:50%;margin:47px 0;text-align:left}
+@media screen and (max-width:720px){
+.stories p{width:90%;margin:47px auto 94px auto;text-align:center}
 }
 .stories__row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:80%;margin:50px auto 117px auto}
 @media screen and (max-width:1024px){
