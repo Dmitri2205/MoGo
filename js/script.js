@@ -1,6 +1,7 @@
 let sliderLine = document.getElementsByClassName('service__slider_line')[0];
 let whatWeDoLine = document.getElementsByClassName('whatWeDo__slider_line')[0];
-let map = document.getElementsByClassName('map');
+let mapSection = document.getElementsByClassName('stories__map');
+let map = document.getElementsByClassName('stories__map_frame');
 let closed = document.getElementsByClassName('closed');
 let sections = document.querySelectorAll("section");
 let current = 0;
@@ -116,15 +117,21 @@ for (let anchor of anchors) {
 
 
 mapOpen = () => {
-    closed[0].classList.add("map");
+    console.log(closed[0]);
+    mapSection[0].style.animation = 'heightAnimation .4s ease-in';
+    closed[0].style.animation = 'mapActions 1s ease';
+    closed[0].classList.add("stories__map_frame");
     closed[0].classList.remove("closed");
-    console.log(sections);
-    for (section in sections) {
-        console.log(section);
-        section.style.filter = "blur(10px)";
-    };
+    console.log(mapSection[0]);
 };
 mapClose = () => {
-    map[0].classList.add("closed");
-    map[0].classList.remove("map");
+    console.log('closed map')
+    map[0].style.animation = 'mapClose .4s ease';
+    mapSection[0].style.animation = 'heightBackAnimation .5s ease-in';
+    setTimeout(()=>{
+        map[0].classList.add("closed");
+    },300);
+    setTimeout(()=>{
+        map[0].classList.remove("stories__map_frame");
+    },700);
 }

@@ -1026,41 +1026,66 @@ header{
 		display: block;
 		width: 100%;
 		height: auto;
-		background: url('img/OPEN_MAP_BACKGROUND.png') center no-repeat;
+		background: url('img/OPEN_MAP_BACKGROUND.png') center repeat;
 		background-size: cover;
 		padding:57px 0;
 		margin-bottom: 80px;
 		position: relative;
-				
 		h2{
 			margin: 15px 0;
 		}
-		.map{
+		&_frame{
 			display: block;
-			width: 600px;
+			width: 60%;
 			height: auto;
 			margin: auto;
-			position: absolute;
-			top: -40%;
-			left: 30%;
+			position: relative;
+			top: 0;
+			left: 0;
 			z-index: 1;
 			border:2px solid #c5c5c5;
 			border-radius: 10px;
-			transition: 1s;
-			transform: scale(0);
-			iframe{
-				animation: mapActions 500ms ease;
-			}
-			animation:mapActions 1s ease;
+			transition:height 1s;
+			transform: scale(1);
 			@keyframes mapActions{
-			
-						0%{
-							transform: scale(0);
-						}100%{
-							transform: scale(1);
-						}
-					}
-				
+				0%{
+					transform: scale(0);
+				}100%{
+					transform: scale(1);
+				}
+			}	
+			@keyframes mapClose{
+				0%{
+					display: block;
+					transform: scale(1);
+				}100%{
+					display: none;
+					transform: scale(0);
+				}200%{
+					display: none;
+				}
+			}
+			@keyframes heightAnimation {
+				0%{
+					width: 100%;
+					height: 100px;
+				}
+				100%{
+					width: 100%;
+					height: 40vh;
+				}
+			}
+			@keyframes heightBackAnimation {
+				0%{
+					height: 40vh;
+				}
+				100%{
+					height: 100px;
+				}	
+			}
+			iframe{
+				width: 100%;
+			}
 			span{
 				display: block;
 				width: 40px;
@@ -1096,26 +1121,15 @@ header{
 			}
 		} 
 		.closed{
+			display: none;
 			position: absolute;
-			top: -40%;
-			left: 30%;
-			z-index: 1;
-			border:2px solid #c5c5c5;
-			border-radius: 10px;
-			transition: 1s;
+			top: 0;
+			left: 0;
+			z-index: -9999;
+			transition: 2s;
 			transform: scale(0);
-			animation:mapClose 1s ease;
-					@keyframes mapClose{
-						0%{
-							display: block;
-							transform: scale(1);
-						}100%{
-							display: none;
-							transform: scale(0);
-						}
-					}
-				}
-
+			visibility: hidden;
+		}
 	}
 }
 footer{
