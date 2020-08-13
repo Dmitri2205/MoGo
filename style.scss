@@ -27,7 +27,7 @@ h2{
 	display: flex;
    	width: 100%;
    	background-color: #f8f8f8;
-   	@media screen and (max-width:414px) {
+   	@media screen and (max-width:720px) {
    		display: none;
    	}
 	img[alt=arrow_left]{
@@ -70,8 +70,7 @@ h2{
    			display:flex;
    			flex-direction: row;
    			justify-content: center;
-   			width:  900px;
-   			height: inherit;
+   			width:  24%;
    			margin: 2% auto;
    			text-align: left;
    			transition: 700ms;
@@ -146,13 +145,13 @@ header{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		width: 100%;	
 		@media screen and(max-width: 1024px) {
 			display: block;
-			width: 100%;	
 		}
 		p{
 		display:inline-block;
-		width: 50%;
+		width: 40%;
 		text-align: center;
 		font-size: 30px;
 		font-weight: bold;
@@ -166,7 +165,7 @@ header{
 			display: inline-flex;
 			flex-direction: row;
 			justify-content: flex-start;
-			width: 50%;
+			width: 60%;
 			height:auto;
 			list-style: none;
 			padding-top: 38px;
@@ -213,7 +212,7 @@ header{
 			width: 50%;
 			margin: auto;
 			color: white;
-			font-size: 150px;
+			font-size: 130px;
 			@media screen and (max-width: 1024px) {
 				width: 90%;
 				margin: 0 auto;
@@ -297,8 +296,9 @@ header{
 	&__photorow{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
-		width: 90%;
+		justify-content: center;
+		flex-wrap: wrap;	
+		width: 95%;
 		height: auto;
 		margin: 0 auto 110px auto;
 		@media screen and (max-width: 720px) {
@@ -310,10 +310,11 @@ header{
 			width: 380px;
 			height: 250px;
 			position: relative;
+			margin: 10px;
 			@media screen and (max-width: 720px) {
 				width: 90%;
 				height: auto;
-				margin: 20px;
+				margin: 20px auto;
 				@for $i from 1 through 3{
 
 				img[alt="photo #{$i}"]{
@@ -511,20 +512,20 @@ header{
 		margin:0 10px;
 		width: 50%;
 		height: 50%;
-		@media screen and (max-width: 414px) {
+		@media screen and (min-width: 320px) and (max-width: 718px) {
 			width: 90%;
 			margin: 0 auto;
 	  }
 	}
-	.service__wraper{
+	&__wraper{
+		display: block;
+		@media screen and (min-width:720px ) and (max-width: 1540px) {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		width: 90%;
 		margin: 0 auto;
 		padding-bottom: 125px;
-		@media screen and (max-width: 1024px) {
-			display: block;
 		}
 		&_block{
 			display: block;
@@ -534,7 +535,7 @@ header{
 			position: relative;
 			top: 0;
 			left: 0;
-			@media screen and (max-width: 414px) {
+			@media screen and (min-width:320px ) and (max-width: 718px) {
 				width: 90%;
 				margin: 20px auto;	
 			}
@@ -645,16 +646,22 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 80%;
+	width: 95%;
 	margin: auto auto 81px auto;
-		@media screen and (max-width:1024px) {
+		@media screen and (max-width:720px) {
 			display: block;
+			flex-wrap: wrap;
 		}
 	&_item{
 		display: block;
 		position: relative;
-		width: auto;
+		width:320px;
 		text-align: center;
+		img{
+				position: relative;
+				width: 100%;
+				height:auto ;
+			}
 		@media screen and (max-width:1024px) {
 			margin: 0 auto;
 			h4{
@@ -663,9 +670,7 @@ header{
 			p{
 				text-align: center;
 			}
-			img{
-				width: 100%;
-			}
+			
 		}
 		&:hover{
 			img{
@@ -691,8 +696,8 @@ header{
 		}
 		&-hover{
 		display: none;
-		width: 380px;
-		height: 470px;
+		width: 100%;
+		height: 78%;
 		position: relative;
 		top:0;
 		left:0;
@@ -701,23 +706,23 @@ header{
 		transition:1000ms;
 		@media screen and (max-width: 720px) {
 			width: 100%;
-			height: 84%;
+			height: 85%;
 		}
 
 		a{	
 			display: inline-block;
-			width: 72px;
-			height: 72px;
+			width: 50px;
+			height: 50px;
 			color:#f38181;
 			text-decoration: none;
-			margin: auto 0;
+			margin:auto 0;
 		}
 		.svg-inline--fa{
 			background-color:#fce38a;
 			font-size: 10px;
 			padding: 6px;
-			width: 56px;
-			height: 56px;
+			width: 40px;
+			height: 40px;
 			transition: 500ms;
 			transform: scale(0);
 			&:hover{
@@ -748,6 +753,7 @@ header{
 		background-color: #f8f8f8;
 		margin-bottom: 81px;
 		img{
+			width: 100%;
 			margin:50px auto;
 			@media screen and (max-width: 1024px) {
 				display: none;
@@ -961,7 +967,6 @@ header{
 			}
 			img{
 				width: 100%;
-				height: 100%;
 			}
 			h4{
 			margin: 5px 0;
