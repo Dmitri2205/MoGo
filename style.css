@@ -321,6 +321,7 @@ header .header__bottomrow_item span {
   color: white;
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
 }
 .intro__photorow_item:hover {
   -webkit-transition: 350ms;
