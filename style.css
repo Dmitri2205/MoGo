@@ -235,8 +235,8 @@ header .header__bottomrow_item span {
   text-transform: uppercase;
 }
 .intro p {
-  width: 50%;
-  margin: 47px 0;
+  width: 90%;
+  margin: 47px auto;
   text-align: left;
 }
 @media screen and (max-width: 720px) {
@@ -540,8 +540,8 @@ header .header__bottomrow_item span {
   text-transform: uppercase;
 }
 .service p {
-  width: 50%;
-  margin: 47px 0;
+  width: 90%;
+  margin: 47px auto;
   text-align: left;
 }
 @media screen and (max-width: 720px) {
@@ -1036,8 +1036,8 @@ header .header__bottomrow_item span {
   text-transform: uppercase;
 }
 .ourteam p {
-  width: 50%;
-  margin: 47px 0;
+  width: 90%;
+  margin: 47px auto;
   text-align: left;
 }
 @media screen and (max-width: 720px) {
@@ -1201,8 +1201,8 @@ header .header__bottomrow_item span {
   text-transform: uppercase;
 }
 .whatWeDo p {
-  width: 50%;
-  margin: 47px 0;
+  width: 90%;
+  margin: 47px auto;
   text-align: left;
 }
 @media screen and (max-width: 720px) {
@@ -1462,8 +1462,8 @@ header .header__bottomrow_item span {
   text-transform: uppercase;
 }
 .clients p {
-  width: 50%;
-  margin: 47px 0;
+  width: 90%;
+  margin: 47px auto;
   text-align: left;
 }
 @media screen and (max-width: 720px) {
@@ -1580,8 +1580,8 @@ header .header__bottomrow_item span {
   text-transform: uppercase;
 }
 .stories p {
-  width: 50%;
-  margin: 47px 0;
+  width: 90%;
+  margin: 47px auto;
   text-align: left;
 }
 @media screen and (max-width: 720px) {
